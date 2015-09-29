@@ -1,0 +1,287 @@
+    1  wget http://swcarpentry.github.io/shell-novice/shell-novice-data.zip
+    2  ls
+    3  unzip shell-novice-data.zip
+    4  ls
+    5  pwd
+    6  cd data
+    7  ls
+    8  cd users
+    9  ls
+   10  cd nelle
+   11  ls
+   12  cd ..
+   13  pwd
+   14  cd larry
+   15  ls
+   16  cd ..
+   17  cd nelle
+   18  ls
+   19  ls -F
+   20  ls north-pacific-gyre
+   21  cd north-pacific-gyre/
+   22  ls
+   23  ls 2012-07-03/
+   24  cd users
+   25  pwd
+   26  cd data
+   27  ls
+   28  cd users
+   29  ls
+   30  cd nelle
+   31  ls
+   32  cd north-pacific-gyre/
+   33  ls
+   34  cd 2012-07-03/
+   35  cd ~
+   36  mkdir samples
+   37  ls
+   38  touch one.txt
+   39  touch two.txt
+   40  ls
+   41  nano one.txt
+   42  cat one.txt
+   43  nano
+   44  ls
+   45  rm draft
+   46  ls
+   47  pwd
+   48  cd samples
+   49  mv two.txt ..
+   50  cp one.txt ../draft.txt
+   51  cd samples
+   52  touch three.txt
+   53  cp three.txt ../dreft.txt
+   54  ls
+   55  history
+   56  cd ../data
+   57  ls
+   58  touch proteins.dat
+   59  ls
+   60  mkdir recombine
+   61  mv proteins.dat recombine/
+   62  cp recombine/proteins.dat ../proteins-saved.dat
+   63  ls
+   64  mkdir recombine2
+   65  ls -r recombine
+   66  cd data/users/nelle
+   67  cd data
+   68  cd users
+   69  ls
+   70  cd~
+   71  cd ~
+   72  ls
+   73  cd data
+   74  ls
+   75  cd users
+   76  ls
+   77  cd nelle
+   78  ls
+   79  cd molecules
+   80  ls
+   81  wc *.pdb
+   82  wc -l p*.pdb
+   83  wc -l p???ane.pdb
+   84  wc -l p???ane.pdb > lengths.txt
+   85  cat lengths.txt
+   86  sort lenths.txt
+   87  sort lengths.txt
+   88  sort -n lengthgs.txt
+   89  sort -n lengths.txt
+   90  sort -n lengths.txt > sorted-length.txt
+   91  cat sorted-length.txt
+   92  head -1 sprted-length.txt
+   93  head -1 sorted-length.txt
+   94  man head
+   95  tail -2 sorted-length.txt
+   96  sort -n lengths.txt | head -3
+   97  sort -n lengths.txt | head -3 | tail -2
+   98  sort < lengths.txt
+   99  cd ..
+  100  cd north-pacific-gyre/
+  101  cd 2012-07-03/
+  102  ls
+  103  wc -l *.txt
+  104  wc -l *.txt | sort -n |head -5
+  105  wc -l *.txt | sort -n |tail -5
+  106  ls *Z.txt
+  107  ls [AB].txt
+  108  ls *[AB].txt
+  109  ls *[!Z].txt
+  110  ls g*
+  111  wc -l *.txt
+  112  wc -l *.txt >length.txt
+  113  wc -l *.txt >>length.txt
+  114  wc -l * | sort -n | head -3
+  115  touch salmon.txt
+  116  nano salmon
+  117  cat salmon.txt
+  118  nano salmon.txt
+  119  cat salmon.txt
+  120  uniq salmon.txt
+  121  sort salmon.txt
+  122  sort salmon.txt | uniq
+  123  uniq -D salmon.txt
+  124  uniq -u salmon.txt
+  125  nano
+  126  cat animals
+  127  cut -d , -f 2 animals.txt
+  128  ls
+  129  cut -d , -f 2 animals
+  130  cut -d , -f 2 animals |sort |uniq
+  131  cd data/users
+  132  cd ~
+  133  ls
+  134  cd data/users/nelle
+  135  cd creatures
+  136  ls
+  137  for filename in basilisk.dat unicorn.dat ; do head -3 $filename; done
+  138  for filename in *.dat; do head -3 $filename; done
+  139  for filename in *.datdo head -3 $filename; done
+  140  for filename in *.dat; do echo $fielname; head -3 $filename; done
+  141  for filename in *.dat; do echo $filename; head -3 $filename; done
+  142  cp unicorn.dat uni/ corn.dat
+  143  history
+  144  history |tail -5
+  145  history |grep unicorn
+  146  history |grep unicorn > history.txt
+  147  ls
+  148  cd ..
+  149  ls
+  150  cd molecules
+  151  ls
+  152  nano middle.sh
+  153  more middle.sh
+  154  bash middle.sh
+  155  nano middle.sh
+  156  bash middle.sh octane.pdb
+  157  cat middle.sh
+  158  nano middle.sh
+  159  bash middle.sh pentane.pdb -9 -3
+  160  nano middle.sh
+  161  bash middle.sh pentane.pdb -9 -3
+  162  history > historylunch.txt
+  163  cat historylunch.txt
+  164  ls
+  165  pwd
+  166  cp historylunch.txt ../users
+  167  cd users
+  168  dc ..
+  169  cd ..
+  170  ls
+  171  cd data
+  172  ls
+  173  cd users
+  174  ls
+  175  cd nelle
+  176  ls
+  177  cd molecules
+  178  ls
+  179  cd ..
+  180  wget http://swcarpentry.github.io/python-novice-inflammation/python-novice-inflammation-data.zip
+  181  unzip python-novice-inflammation-data.zip 
+  182  ls
+  183  git config --global user.name "Emily R"
+  184  git config --global user.email "ekr002@student.usc.edu.au"
+  185  git config --global color.ui "auto"
+  186  git config --global core.editor "nano -w"
+  187  git config --list
+  188  pwd
+  189  cd planets
+  190  ls
+  191  cd data
+  192  ls
+  193  ls users
+  194  cd ..
+  195  ls
+  196  mkdir planets
+  197  git init
+  198  nano
+  199  git status
+  200  git add mars.txt
+  201  git status
+  202  git commit -m "Start notes on Mars"
+  203  get status
+  204  git status
+  205  git log
+  206  nano mars.txt
+  207  git status
+  208  git add mars.txt
+  209  git status
+  210  git commit -m "Change one to the file"
+  211  git log
+  212  nano mars.txt
+  213  git status
+  214  git diff
+  215  nano mars.txt
+  216  git diff
+  217  git add mars.txt
+  218  git commit -m "Change one to the file #2"
+  219  git log
+  220  ls
+  221  pwd
+  222  mkdir bio
+  223  cd bio
+  224  ls
+  225  cd ..
+  226  ls -a
+  227  git log
+  228  git status
+  229  rm -rf .git
+  230  cd bio/
+  231  ls
+  232  git init
+  233  nano
+  234  ls
+  235  nano mars.txt
+  236  git add mars.txt
+  237  git commit -m "start notes"
+  238  nano mars.txt
+  239  pwd
+  240  mkdir bio
+  241  cd bio
+  242  git init
+  243  git add mars.txt
+  244  nano mars.txt
+  245  git add mars.txt
+  246  git commit -m "mars again"
+  247  nano mars.txt
+  248  mkdir results
+  249  touch a.dat b.dat c.dat results/a.out b.out
+  250  git status
+  251  nano .gitignore
+  252  cat .gitignore
+  253  git staus
+  254  git status
+  255  git add .gitignore
+  256  git commit -m "adding ignore git file"
+  257  git add a.dat
+  258  pwd
+  259  cd researcher
+  260  ls
+  261  cd bio
+  262  ls
+  263  git remote add https://github.com/emilyrames/bio.git
+  264  git log
+  265  git remote add origin https://github.com/emilyrames/bio.git
+  266  log
+  267  git log
+  268  git remote -v
+  269  git push origin master
+  270  git pull origin master
+  271  cd ..
+  272  mkdir gitnew
+  273  pwd
+  274  cd gitnew
+  275  git init
+  276  nano stuff.txt
+  277  nano file2.txt
+  278  git add stuff.txt
+  279  git commit -m "first file"
+  280  git add file2.txt
+  281  git commit -m "second file"
+  282  git log
+  283  git remote add origin https://github.com/emilyrames/Repository2.git
+  284  git remote v
+  285  git remote -v
+  286  git push origin master
+  287  history > history.txt
